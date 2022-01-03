@@ -100,30 +100,30 @@ func (a *Alacritty) WriteFile(theme Theme) error {
 			"colors:" + "\n" +
 			"  # Default colors" + "\n" +
 			"  primary:" + "\n" +
-			"    background: " + strings.Replace(theme.Background, "#", "0x", 1) + "\n" +
-			"    foreground: " + strings.Replace(theme.Foreground, "#", "0x", 1) + "\n" +
+			"    background: '" + strings.Replace(theme.Background, "#", "0x", 1) + "'\n" +
+			"    foreground: '" + strings.Replace(theme.Foreground, "#", "0x", 1) + "'\n" +
 			"\n" +
 			"  # Normal colors" + "\n" +
 			"  normal:" + "\n" +
-			"    black: " + strings.Replace(theme.Black, "#", "0x", 1) + "\n" +
-			"    red: " + strings.Replace(theme.Red, "#", "0x", 1) + "\n" +
-			"    green:" + strings.Replace(theme.Green, "#", "0x", 1) + "\n" +
-			"    yellow: " + strings.Replace(theme.Yellow, "#", "0x", 1) + "\n" +
-			"    blue: " + strings.Replace(theme.Blue, "#", "0x", 1) + "\n" +
-			"    magenta: " + strings.Replace(theme.Magenta, "#", "0x", 1) + "\n" +
-			"    cyan: " + strings.Replace(theme.Cyan, "#", "0x", 1) + "\n" +
-			"    white: " + strings.Replace(theme.White, "#", "0x", 1) + "\n" +
+			"    black: '" + strings.Replace(theme.Black, "#", "0x", 1) + "'\n" +
+			"    red: '" + strings.Replace(theme.Red, "#", "0x", 1) + "'\n" +
+			"    green: '" + strings.Replace(theme.Green, "#", "0x", 1) + "'\n" +
+			"    yellow: '" + strings.Replace(theme.Yellow, "#", "0x", 1) + "'\n" +
+			"    blue: '" + strings.Replace(theme.Blue, "#", "0x", 1) + "'\n" +
+			"    magenta: '" + strings.Replace(theme.Magenta, "#", "0x", 1) + "'\n" +
+			"    cyan: '" + strings.Replace(theme.Cyan, "#", "0x", 1) + "'\n" +
+			"    white: '" + strings.Replace(theme.White, "#", "0x", 1) + "'\n" +
 			"\n" +
 			"  # Bright colors" + "\n" +
 			"  bright:" + "\n" +
-			"    black: " + strings.Replace(theme.BrightBlack, "#", "0x", 1) + "\n" +
-			"    red: " + strings.Replace(theme.BrightRed, "#", "0x", 1) + "\n" +
-			"    green: " + strings.Replace(theme.BrightGreen, "#", "0x", 1) + "\n" +
-			"    yellow: " + strings.Replace(theme.BrightYellow, "#", "0x", 1) + "\n" +
-			"    blue: " + strings.Replace(theme.BrightBlue, "#", "0x", 1) + "\n" +
-			"    magenta: " + strings.Replace(theme.BrightMagenta, "#", "0x", 1) + "\n" +
-			"    cyan: " + strings.Replace(theme.BrightCyan, "#", "0x", 1) + "\n" +
-			"    white: " + strings.Replace(theme.BrightWhite, "#", "0x", 1) + "\n"
+			"    black: '" + strings.Replace(theme.BrightBlack, "#", "0x", 1) + "'\n" +
+			"    red: '" + strings.Replace(theme.BrightRed, "#", "0x", 1) + "'\n" +
+			"    green: '" + strings.Replace(theme.BrightGreen, "#", "0x", 1) + "'\n" +
+			"    yellow: '" + strings.Replace(theme.BrightYellow, "#", "0x", 1) + "'\n" +
+			"    blue: '" + strings.Replace(theme.BrightBlue, "#", "0x", 1) + "'\n" +
+			"    magenta: '" + strings.Replace(theme.BrightMagenta, "#", "0x", 1) + "'\n" +
+			"    cyan: '" + strings.Replace(theme.BrightCyan, "#", "0x", 1) + "'\n" +
+			"    white: '" + strings.Replace(theme.BrightWhite, "#", "0x", 1) + "'\n"
 
 	_, err = f.WriteString(t)
 
